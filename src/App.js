@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Useeffect from "./Components/hooks/Useeffect/Useeffect";
+import Usememo from "./Components/hooks/Usememo/Usememo";
+import Footer from "./Components/Common/Footer/Footer";
+import Header from "./Components/Common/Header/Header";
+import Usestate from "./Components/hooks/Usestate/Usestate";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Usestate />
+      <Useeffect/>
+      <Usememo />
+      <Footer/>
+      
+    </>
   );
 }
 
